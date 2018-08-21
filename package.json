@@ -7,9 +7,12 @@
   "author": "Neil Kumar <neilkumar1192@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "start": "babel-node server.js"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^5.4.0",
     "eslint-config-google": "^0.9.1",
     "eslint-plugin-prettier": "^2.6.2",

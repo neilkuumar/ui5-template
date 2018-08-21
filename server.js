@@ -1,8 +1,8 @@
-const http = require('http');
-const url = require('url');
-const httpProxy = require('http-proxy');
-const path = require('path');
-const fs = require('fs');
+import http from 'http';
+import url from 'url';
+import httpProxy from 'http-proxy';
+import path from 'path';
+import fs from 'fs';
 const port = process.argv[2] || 8888;
 
 // //////////////////////////////////////////////////////////////////////////
