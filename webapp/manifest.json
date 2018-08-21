@@ -1,0 +1,164 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "ui5.template",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_belize"]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": {
+			"viewName": "ui5.template.view.App",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.f": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "ui5.template.i18n.i18n"
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "ui5.template.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": "notFound"
+				}
+			},
+			"routes": [{
+					"pattern": "",
+					"name": "Monitor",
+					"target": "Monitor"
+				},
+				{
+					"pattern": "PartDetails/{manufacturerName}/{serialNumber}/{partNumber}",
+					"name": "PartDetails",
+					"target": "PartDetails"
+				},
+				{
+					"pattern": "Controller",
+					"name": "Controller",
+					"target": "Controller"
+				},
+				{
+					"pattern": "ClaimWork/{manufacturerName}/{serialNumber}/{partNumber}",
+					"name": "ClaimWork",
+					"target": "ClaimWork"
+				},
+				{
+					"pattern": "FinishWork/{manufacturerName}/{serialNumber}/{partNumber}",
+					"name": "FinishWork",
+					"target": "FinishWork"
+				},
+				{
+					"pattern": "Decomission/{manufacturerName}/{serialNumber}/{partNumber}",
+					"name": "Decomission",
+					"target": "Decomission"
+				},
+				{
+					"pattern": "Genealogy/{manufacturerName}/{serialNumber}/{partNumber}",
+					"name": "Genealogy",
+					"target": "Genealogy"
+				},
+				{
+					"pattern": "VDS/{manufacturerName}/{serialNumber}/{partNumber}",
+					"name": "VDS",
+					"target": "VDS"
+				}
+			],
+			"targets": {
+				"Monitor": {
+					"viewName": "Monitor",
+					"viewId": "Monitor",
+					"viewLevel": 1
+				},
+				"PartDetails": {
+					"viewName": "PartDetails",
+					"viewId": "PartDetails",
+					"viewLevel": 2
+				},
+				"Controller": {
+					"viewName": "Controller",
+					"viewId": "Controller",
+					"viewLevel": 2
+				},
+				"ClaimWork": {
+					"viewName": "ClaimWork",
+					"viewId": "ClaimWork",
+					"viewLevel": 3
+				},
+				"FinishWork": {
+					"viewName": "FinishWork",
+					"viewId": "FinishWork",
+					"viewLevel": 3
+				},
+				"Decomission": {
+					"viewName": "Decomission",
+					"viewId": "Decomission",
+					"viewLevel": 3
+				},
+				"Genealogy": {
+					"viewName": "Genealogy",
+					"viewId": "Genealogy",
+					"viewLevel": 4
+				},
+				"VDS": {
+					"viewName": "VDS",
+					"viewId": "VDS",
+					"viewLevel": 4
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		}
+	}
+}

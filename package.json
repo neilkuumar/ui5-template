@@ -1,0 +1,16 @@
+{
+  "name": "ui5-template",
+  "version": "1.0.0",
+  "description": "UI5 Template",
+  "main": "bot.js",
+  "repository": "https://github.com/neilkuumar/ui5-template.git",
+  "author": "Neil Kumar <neilkumar1192@gmail.com>",
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "prettier": "^1.14.2"
+  }
+}
