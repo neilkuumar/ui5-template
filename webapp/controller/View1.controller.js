@@ -10,12 +10,12 @@ sap.ui.define(
 	function(BaseController, Controller, JSONModel, formatter, MessageBox, MessageToast) {
 		'use strict';
 
-		return BaseController.extend('ui5.template.controller.Monitor', {
+		return BaseController.extend('ui5.template.controller.View1', {
 			formatter: formatter,
 
 			onInit: function() {
 				let oRouter = this.getOwnerComponent().getRouter();
-				oRouter.getRoute('Monitor').attachMatched(this._onRouteMatched, this);
+				oRouter.getRoute('View1').attachMatched(this._onRouteMatched, this);
 			},
 
 			/* ============================================================ */
