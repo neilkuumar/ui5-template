@@ -78,7 +78,7 @@
 				}
 			],
 			"targets": {
-				"Monitor": {
+				"View1": {
 					"viewName": "View1",
 					"viewId": "View1",
 					"viewLevel": 1
